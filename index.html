@@ -8,16 +8,21 @@
     <meta name="keywords" content="Portfólio, Geovane Borba, Currículo, JS, HTML, CSS">
     <meta name="author" content="Geovane Borba">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
     <title>Geovane Borba</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-
+<body id="home">
     <nav>
         <a href="#">Geovane Borba</a>
+        <span id="img-perfil"></span>
         <button id="menu-mobile"><i class="fas fa-bars fa-lg"></i></button>
         <ul>
+            <li><a href="#home">Home</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#educacao">Educação</a></li>
             <li><a href="#qualificacao">Qualificação</a></li>
@@ -25,121 +30,125 @@
         </ul>
     </nav>
 
-    <header>
-        <div class="hero-image">
-            <div class="hero-text">
-                <h1>Geovane Borba</h1>
-                <p>Desenvolvedor Web</p>
+    <div class="wrapper">
+        <header>
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h1>Geovane <span class="roxo">Borba</span></h1>
+                    <p id="dev-web">Desenvolvedor Web</p>
+                    <p id="cidade">Gravataí - Rio Grande do Sul</p>
+                </div>
             </div>
+        </header>
+
+        <div class="conteudo">
+            <section class="container sobre" id="sobre">
+                <h2>Sobre</h2>
+                <div class="item-sobre">
+                    <p>Estudante da área de TI, apaixonado por tecnologia, sempre em processo de aprendizagem,
+                        aprimorando o conhecimento em mern stack. cursando Análise e Desenvolvimento de Sistemas
+                    </p>
+                </div>
+
+                <div class="item-sobre social">
+                    <span><i class="fas fa-envelope"></i> <a
+                            href="mailto:geovanne@live.com">geovanne@live.com</a></span>
+                    <span><i class="fab fa-github"></i> <a href="https://github.com/geovaneborba"
+                            target="_blank">geovaneborba</a></span>
+                    <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/geovaneborba/"
+                            target="_blank">geovaneborba</a></span>
+                    <span><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/geovaneborba_/"
+                            target="_blank">geovaneborba_</a></span>
+                </div>
+            </section>
+
+            <section class="container educacao" id="educacao">
+                <div class="educacao-wrapper">
+                    <h2>Formação Acadêmica</h2>
+                    <div class="item-educacao">
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
+                        <h5>Qi Faculdade e Escola Técnica</h5>
+                        <p>Março 2019 - Atual</p>
+                    </div>
+                    <div class="item-educacao">
+                        <h3>Técnico em Informática</h3>
+                        <h5>Qi Faculdade e Escola Técnica</h5>
+                        <p>Fevereiro 2017 - Agosto 2018</p>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section class="container qualificacao" id="qualificacao">
+                <div class="educacao-wrapper">
+                    <h2>Qualificação</h2>
+                    <div class="item-educacao">
+                        <h3>Desenvolvimento Web Moderno JavaScript</h3>
+                        <h5>Udemy</h5>
+                        <p>Outubro 2019 - Atual</p>
+                    </div>
+                    <div class="item-educacao">
+                        <h3>NodeJS</h3>
+                        <h5>Rocketseat</h5>
+                        <p>Janeiro 2020</p>
+                    </div>
+                    <div class="item-educacao">
+                        <h3>JavaScript ES6</h3>
+                        <h5>Rocketseat</h5>
+                        <p>Janeiro 2020</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container portfolio" id="portfolio">
+                <h2>Portfólio</h2>
+                <div class="item-portfolio">
+                    <h3>Tradicional Barbearia</h3>
+                    <div class="img-portfolio">
+                        <a href="#"><img src="./img/portfolio2.png" alt="Tradicional Barbearia"></a>
+                    </div>
+                    <h5>Projeto de internet i</h5>
+                    <p>Análise e Desenvolvimento de Sistemas 2019</p>
+                </div>
+                <div class="item-portfolio">
+                    <h3>Freeskate Skate Shop</h3>
+                    <div class="img-portfolio">
+                        <a href="#"><img src="./img/portfolio1.png" alt="Tradicional Barbearia"></a>
+                    </div>
+                    <h5>Projeto de programação para internet ii</h5>
+                    <p>Técnico em Informática 2018</p>
+                </div>
+            </section>
+            </main>
         </div>
-    </header>
+        <footer>
+            <p>
+                Feito com <i class="fas fa-heart"></i> <a href="https://github.com/geovaneborba" target="_blank">Geovane
+                    Borba</a>
+            </p>
+            <p>
+                Copyright ©
+                <script>document.write(new Date().getFullYear())</script> All rights reserved
+            </p>
+        </footer>
 
-    <main class="conteudo">
-        <section class="container sobre" id="sobre">
-            <h2>Sobre</h2>
-            <div class="item-sobre">
-                <p>Estudante da área de TI, apaixonado por tecnologia, sempre em processo de aprendizagem,
-                    aprimorando o conhecimento em mern stack. cursando Análise e Desenvolvimento de Sistemas
-                </p>
-            </div>
-
-            <div class="item-sobre social">
-                <span><i class="fas fa-envelope"></i> <a href="mailto:geovanne@live.com">geovanne@live.com</a></span>
-                <span><i class="fab fa-github"></i> <a href="https://github.com/geovaneborba"
-                        target="_blank">geovaneborba</a></span>
-                <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/geovaneborba/"
-                        target="_blank">geovaneborba</a></span>
-                <span><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/geovaneborba_/"
-                        target="_blank">geovaneborba_</a></span>
-            </div>
-        </section>
-
-        <section class="container educacao" id="educacao">
-            <div class="educacao-wrapper">
-                <h2>Formação Acadêmica</h2>
-                <div class="item-educacao">
-                    <h3>Análise e Desenvolvimento de Sistemas</h3>
-                    <h5>Qi Faculdade e Escola Técnica</h5>
-                    <p>Março 2019 - Atual</p>
-                </div>
-                <div class="item-educacao">
-                    <h3>Técnico em Informática</h3>
-                    <h5>Qi Faculdade e Escola Técnica</h5>
-                    <p>Fevereiro 2017 - Agosto 2018</p>
-                </div>
-            </div>
-
-
-        </section>
-
-        <section class="container qualificacao" id="qualificacao">
-            <div class="educacao-wrapper">
-                <h2>Qualificação</h2>
-                <div class="item-educacao">
-                    <h3>Desenvolvimento Web Moderno JavaScript</h3>
-                    <h5>Udemy</h5>
-                    <p>Outubro 2019 - Atual</p>
-                </div>
-                <div class="item-educacao">
-                    <h3>NodeJS</h3>
-                    <h5>Rocketseat</h5>
-                    <p>Janeiro 2020</p>
-                </div>
-                <div class="item-educacao">
-                    <h3>JavaScript ES6</h3>
-                    <h5>Rocketseat</h5>
-                    <p>Janeiro 2020</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="container portfolio" id="portfolio">
-            <h2>Portfólio</h2>
-            <div class="item-portfolio">
-                <h3>Tradicional Barbearia</h3>
-                <div class="img-portfolio">
-                    <a href="#"><img src="./img/portfolio2.png" alt="Tradicional Barbearia"></a>
-                </div>
-                <h5>Projeto de internet i</h5>
-                <p>Análise e Desenvolvimento de Sistemas 2019</p>
-            </div>
-            <div class="item-portfolio">
-                <h3>Freeskate Skate Shop</h3>
-                <div class="img-portfolio">
-                    <a href="#"><img src="./img/portfolio1.png" alt="Tradicional Barbearia"></a>
-                </div>
-                <h5>Projeto de programação para internet ii</h5>
-                <p>Técnico em Informática 2018</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>
-            Feito com <i class="fas fa-heart"></i> <a href="https://github.com/geovaneborba" target="_blank">Geovane
-                Borba</a>
-        </p>
-        <p>
-            Copyright ©
-            <script>document.write(new Date().getFullYear())</script> All rights reserved
-        </p>
-    </footer>
-
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="./js/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="./js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="./js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <!-- Font Awesome -->
-    <script src="./js/fontawesome.js"></script>
-    <script src="./js/main.js"></script>
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-    <!-- <script>
+        <!-- JavaScript (Opcional) -->
+        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+        <script src="./js/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="./js/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="./js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script src="./js/fontawesome.js"></script>
+        <script src="./js/main.js"></script>
+        <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+        <!-- <script>
         AOS.init();
     </script> -->
 </body>

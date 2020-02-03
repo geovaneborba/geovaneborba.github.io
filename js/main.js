@@ -27,18 +27,24 @@ btnMenu.addEventListener("click", function () {
     menu.classList.toggle("open")
 })
 
-jQuery(window).on("scroll", function () {
-    if (jQuery(window).scrollTop()) {
-        jQuery("nav").addClass('black')
-        jQuery("nav i").addClass("white")
-        jQuery("nav a").addClass("white")
-        jQuery("nav ul li a").addClass("white")
-    }
-    else {
-        jQuery("nav").removeClass('black')
-        jQuery("nav i").removeClass("white")
-        jQuery("nav a").removeClass("white")
-        jQuery("nav ul li a").removeClass("white")
-    }
-})
+if ($(window).width() < 992) {
+    jQuery(window).on("scroll", () => {
+        if (jQuery(window).scrollTop()) {
+            jQuery("nav").addClass('black')
+            jQuery("nav i").addClass("white")
+            jQuery("nav a").addClass("white")
+            jQuery("nav ul li a").addClass("white")
+        }
+        else {
+            jQuery("nav").removeClass('black')
+            jQuery("nav i").removeClass("white")
+            jQuery("nav a").removeClass("white")
+            jQuery("nav ul li a").removeClass("white")
+        }
+    })
+}
+// } else {
+//     let pElement = document.querySelector('.hero-text p')
+//     pElement.textContent = 'Gravataí - Rio Grande do Sul'
+// }
 
