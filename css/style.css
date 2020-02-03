@@ -1,7 +1,7 @@
-/**
-* RESET GERAL
-**/
+/* FONT */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
 
+/* RESET GERAL */
 * {
     padding: 0;
     margin: 0;
@@ -9,22 +9,18 @@
     list-style: none;
 }
 
+/* NAVBAR CONFIGS */
 .open {
     max-height: 100vh;
 }
-
 .black {
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .white {
     color: #fff;
 }
 
-/**
-* NAV
-*/
-
+/* NAVBAR */
 nav {
     transition: 1s;
     display: flex;
@@ -36,14 +32,12 @@ nav {
     z-index: 1;
     background: rgb(255, 255, 255);
 }
-
 nav > a {
     text-decoration: none;
     color: #444;
     margin-left: 2rem;
     text-transform: uppercase;
 }
-
 nav #menu-mobile {
     background-color: transparent;
     padding: 10px;
@@ -52,7 +46,6 @@ nav #menu-mobile {
     cursor: pointer;
     color: #444;
 }
-
 nav ul {
     transition: 1.5s;
     display: flex;
@@ -64,14 +57,12 @@ nav ul {
     max-height: 0;
     overflow: hidden;
 }
-
 nav ul li {
     display: block;
     width: 100%;
     text-align: center;
     padding: 0.5rem;
 }
-
 nav ul li a {
     color: #444;
     text-transform: uppercase;
@@ -79,16 +70,14 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
-/**
-* HEADER
-**/
-
+/* HEADER */
 header {
     display: flex;
     /* width: 100%;
     height: 20vh; */
 }
 
+/* HERO */
 .hero-image {
     display: flex;
     align-items: center;
@@ -100,20 +89,18 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
 .hero-text {
     display: flex;
     flex-wrap: wrap;
     max-width: 80%;
     justify-content: center;
 }
-
 .hero-text h1 {
     color: #f1f1f1;
     font-size: 1.5rem;
 }
-
 .hero-text > p {
     color: #f1f1f1;
     font-size: 0.9rem;
@@ -121,7 +108,6 @@ header {
 }
 
 /* CONTEUDO */
-
 .conteudo {
     display: flex;
     flex-wrap: wrap;
@@ -131,7 +117,6 @@ header {
 }
 
 /* SOBRE */
-
 .container {
     display: flex;
     flex-direction: column;
@@ -139,7 +124,6 @@ header {
     justify-content: center;
     width: 100%;
 }
-
 .container h2::after {
     display: table;
     content: '';
@@ -148,7 +132,6 @@ header {
     background-color: #7A2AB8;
     margin: 0 auto;
 }
-
 .container h2 {
     text-align: center;
     padding: 2rem 0 1rem 0;
@@ -157,71 +140,61 @@ header {
     font-weight: 500;
     font-size: 1rem;
 }
-
 .container p {
     margin: 0 auto;
     font-size: 0.8rem;
     text-align: justify;
 }
-
 .sobre .item-sobre:last-child {
     margin-top: 1rem;
 }
 
+/* SOCIAL */
 .social {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-
 .social span {
     width: 100%;
     margin: 0.5rem 0;
 }
-
 .social span a {
     text-decoration: none;
     color: #444;
     padding-left: 0.2rem;
+    font-size: 0.8rem;
 }
-
 .social span a:hover {
     color:  #888
 }
-
 .social span a:visited {
     color:  #555
 }
 
 /* EDUCAÇÃO ITEM */
-
 .educacao-wrapper {
     position: relative;
 }
-
 .item-educacao {
     margin: 0.8rem 0;
 }
-
 .item-educacao:last-child {
     margin: 0;
 }
-
 .item-educacao h3 {
     font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: normal;
     color: #444;
 }
-
 .item-educacao h5 {
     font-size: 0.7rem;
     text-transform: uppercase;
     font-weight: normal;
     color: #7A2AB8;
 }
-
 .item-educacao p {
     font-size: 0.6rem;
     text-transform: uppercase;
@@ -229,11 +202,9 @@ header {
 }
 
 /* ITEM PORTFÓLIO */
-
 .item-portfolio {
     margin: 1rem 0;
 }
-
 .item-portfolio h3 {
     font-weight: normal;
     font-size: 0.8rem;
@@ -241,24 +212,22 @@ header {
     text-transform: uppercase;
     color: #444;
 }
-
 .item-portfolio h5 {
     font-weight: normal;
     font-size: 0.7rem;
     text-transform: uppercase;
     color: #444;
 }
-
 .item-portfolio p {
     font-size: 0.5rem;
     text-transform: uppercase;
     color: #444;
 }
-
 .img-portfolio img {
     width: 100%;
 }
 
+/* RODAPÉ */
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -268,11 +237,9 @@ footer {
     background-color: #444;
     padding: 1rem 0;
 }
-
 .fa-heart {
     color: rgb(255, 0, 0);
 }
-
 footer p {
     font-size: 0.7rem;
     margin-left: 2rem;
@@ -280,19 +247,27 @@ footer p {
     width: 100%;
     text-align: center;
 }
-
 footer p a {
     text-decoration: none;
     color: #f1f1f1;
 }
 
+/* 480PX */
 @media only screen and (min-width:480px) {
+    .item-sobre p {
+        font-size: 1rem;
+    }
+    /* SOCIAL */
+    .social span a {
+        font-size: 1rem;
+    }
 
+    /* HERO TEXT */
     .hero-text h1 {
         width: 100%;
     }
 
-
+    /* EDUCAÇÃO */
     .item-educacao::before {
         display: table;
         position: absolute;
@@ -316,7 +291,6 @@ footer p a {
         background-color: rgb(123, 42, 184);
         margin-top: 0.3rem;
     }
-
     .item-educacao h3 {
         margin-left: 2rem;
     }
@@ -326,20 +300,57 @@ footer p a {
     .item-educacao p {
         margin-left: 2rem;
     }
-
-    /* .item-educacao h3 {
-        padding-left: 1.7em;
-    }
-    .item-educacao h5 {
-        padding-left: 1.7em;
-    }
-    .item-educacao p {
-        padding-left: 1.7em;
-    } */
 }
 
 @media only screen and (min-width:768px) {
-    
+    /* Hero text */
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    .hero-text p {
+        font-size: 1.3rem;
+    }
+
+    /* SOBRE */
+    .sobre h2 {
+        font-size: 1.5rem;
+    }
+    .item-sobre p {
+        font-size: 1rem;
+    }
+
+    /* EDUCAÇÃO */
+    .educacao h2 {
+        font-size: 1.5rem;
+    }
+    .item-educacao h3 {
+        font-size: 1.2rem;
+    }
+    .item-educacao h5 {
+        font-size: 1rem;
+    }
+
+    /* QUALIFICAÇÃO */
+    .qualificacao h2 {
+        font-size: 1.5rem;
+    }
+
+    /* PORTFÓLIO */
+    .portfolio h2 {
+        font-size: 1.5rem;
+    }
+    .item-portfolio h3 {
+        font-size: 1.1rem;
+    }
+    .item-portfolio h5 {
+        font-size: 1rem;
+    }
+    .item-portfolio p {
+        font-size: 0.8rem;
+    }
+
 }
 
-@media only screen and (min-width:992px) {}
+@media only screen and (min-width:992px) {
+
+}
