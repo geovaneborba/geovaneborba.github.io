@@ -97,6 +97,7 @@ header {
 .hero-text h1 {
     color: #f1f1f1;
     font-size: 1.5rem;
+    width: 100%;
 }
 .hero-text > p {
     color: #f1f1f1;
@@ -453,7 +454,7 @@ footer p a:hover {
         width: 100%;
         font-weight: 400;
     }
-    /* CONTEUDO CONTAINER */
+    /* CONTEUDO CONTAINER */ 
     .conteudo {
         margin: 0 auto;
         padding: 0;
